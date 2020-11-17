@@ -12,3 +12,12 @@ hamburger.addEventListener('click', () => {
 menuClose.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+
+const counters = document.querySelectorAll('.products__percent');
+const lines = document.querySelectorAll('.products__item-bottom span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
+
