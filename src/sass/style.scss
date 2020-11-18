@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5 h6 {
     margin: 0;
 
 }
+ul {
+    padding: 0;
+    margin: 0;
+}
+    
 
 
 .container {
@@ -37,3 +42,5 @@ h1, h2, h3, h4, h5 h6 {
 @import 'blocks/resume';
 @import 'blocks/tools';
 @import 'blocks/products';
+@import 'blocks/portfolio';
+@import 'blocks/price';
