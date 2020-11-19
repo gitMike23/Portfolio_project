@@ -13,3 +13,18 @@
     }
 
 }
+
+@mixin circle_point {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: $main-color;
+        border-radius: 100%;
+        left: -7px;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+}
