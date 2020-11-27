@@ -4,7 +4,7 @@
         padding-top: 60px;
         display: grid;
         grid-template-columns: repeat(2, minmax(366px, auto));
-        justify-content: space-between;      
+        justify-content: space-around;      
     }
     &__column {
         display: grid;
