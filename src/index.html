@@ -40,12 +40,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <aside>
-        <div class="sidepanel">
+        <div class="sidepanel animate__animated animate__fadeIn animate__slow">
             <a href="#" class="sidepanel__link"><img src="icons/social/facebook.svg" alt="Facebook"></a>
             <a href="#" class="sidepanel__link"><img src="icons/social/instagram.svg" alt="instagram"></a>
             <a href="#" class="sidepanel__link"><img src="icons/social/github.svg" alt="github"></a>
@@ -93,7 +93,7 @@
         </div>
         <div class="menu__overlay"></div>
     </div>
-    <section class="promo">
+    <section class="promo animate__animated animate__fadeIn animate__slow">
         <div class="hamburger">
             <div></div>
             <div class="long"></div>
@@ -109,14 +109,14 @@
             </div>
             <div class="promo__btns">
                 <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+                <a href="#" class="promo__link ">Про меня</a>
             </div>
         </div>
     </section>
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about__photo">
+                <div class="about__photo animate__animated animate__fadeInLeft animate__slow wow">
                     <!-- <img srcset="img/main_photo-min.jpg 300w,
                                 img/main_photo.jpg 400w"
                         sizes="(max-width: 576px) 280px,
@@ -129,14 +129,14 @@
                     </picture>  
                 </div>
                 
-               <div class="about__descr">
+               <div class="about__descr animate__animated animate__fadeInRight animate__slow wow">
                     <h2 class="title title_fz16 about__title">Про меня</h2>
                     <div class="title title_fz36 about__subtitle">Меня зовут Александра</div>
                     <div class="about__divider divider"></div>
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                </div>
                <div class="about__skills">
-                <div class="about__skills-item">
+                <div class="about__skills-item animate__animated animate__fadeInUp animate__slow animate__delay-.5s wow">
                     <div class='about__skills-circle'>
                         <img src="icons/about_me/web_development.svg" alt="web_development">
                     </div>
@@ -151,7 +151,7 @@
 
                 </div>
 
-                <div class="about__skills-item">
+                <div class="about__skills-item animate__animated animate__fadeInUp animate__slow animate__delay-.5s wow"">
                     <div class='about__skills-circle'>
                         <img src="icons/about_me/mobile_dev.svg" alt="mobile_development">
                     </div>
@@ -166,7 +166,7 @@
 
                 </div>
 
-                <div class="about__skills-item">
+                <div class="about__skills-item animate__animated animate__fadeInUp animate__slow animate__delay-1s wow"">
                     <div class='about__skills-circle'>
                         <img src="icons/about_me/design.svg" alt="web_design">
                     </div>
@@ -187,7 +187,7 @@
     </section>
     <section class="resume"> 
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Опыт</h2>
+            <h2 class="title title_fz16 title__section-title animate__animated animate__fadeInUp animate__slow animate__delay-.5s wow data-wow-offset:'1600'">Опыт</h2>
             <div class=" title title_fz36 title__section-subtitle">Чем я буду полезна</div>
             <div class="divider"></div>
             <div class="resume__wrapper">
@@ -530,6 +530,20 @@
             </div>
         </div>
     </section>
+    <div class="scroll-up">
+        <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+          <path
+            class="scroll-up__svg-path"
+            d="
+              M24,0
+              a24,24 0 0,1 0,48
+              a24,24 0 0,1 0,-48
+  
+            "
+          />
+        </svg>
+      </div>
+      <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

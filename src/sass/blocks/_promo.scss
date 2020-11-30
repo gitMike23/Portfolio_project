@@ -22,13 +22,16 @@
         align-items: center;
     }
     &__link {
+        position: relative;
         color: #000;
         font-size: 14px;
         line-height: 21px;
         font-weight: bold;
+        transition: all .3s ease;
         &:hover {
             color: #000;
             text-decoration: none;
+            transform: translate(-2px, -3px);
         }
 
 
